@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curs 6 aplicatia 4</title>
+  <link rel="stylesheet" href="./css/ap4.css">
+</head>
+<body>
+ <form id="myform" action="" method="post">
+  <div>
+  <fieldset>
+    <legend>Card</legend>
+    <label for="numarcard">Numar card:</label>
+    <input type="number" name="numarcard" id="numarcard"><br>
+
+    <label for="dataexp">Data expirare:</label>
+    <input type="date" name="dataexp" id="dataexp">
+  </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend>Livrare</legend>
+      <label for="prenume">Prenume:</label>
+      <input type="text" name="prenume" id="prenume" placeholder="Introduceti prenumele"><br>
+
+      <label for="nume">Nume:</label>
+      <input type="text" name="nume" id="nume" placeholder="Introduceti numele"><br>
+
+      <label for="companie">Companie:</label>
+      <input type="text" name="companie" id="companie" placeholder="Introduceti numele companiei:"><br>
+
+      <label for="adresa">Adresa:</label>
+      <input type="text" name="adresa" id="adresa"><br>
+
+      <label for="oras">Oras:</label>
+      <input type="text" name="oras" id="oras"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email"><br>
+
+      <label for="tel">Telefon:</label>
+      <input type="tel" name="tel" id="tel"><br>
+    </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend>Adauga produsele:</legend>
+      <label for="masina">Masina</label>
+      <select name="masina" id="masina">
+        <option value="1">Volvo</option>
+        <option value="2">BMW</option>
+        <option value="3">Dacia</option>
+        <option value="4">Tesla</option>
+        <option value="5">Toyota</option>
+      </select><br>
+
+      <label for="mesaj">Mesaj:</label>
+      <textarea name="mesaj" id="mesaj">Doresc masina noua</textarea>
+    </fieldset>
+  </div>
+ </form>
+ <!--  -->
+  <h2>Responsive Checkout Form</h2>
+  <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+        
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
