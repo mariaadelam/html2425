@@ -1,0 +1,19 @@
+#tabel{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+#tabel tbody tr:nth-child(2n){
+  background-color: rgb(45, 134, 105);
+}
+#tabel tbody tr:nth-child(2n+1){
+  background-color: rgb(165, 83, 165)
+}
+#tabel tfoot tr:nth-child(2n+1){
+  background-color: rgb(84, 32, 133);
+  color: white;
+}
+#tabel tfoot tr:nth-child(2n){
+  background-color: rgb(46, 107, 46);
+  color: white;
+}

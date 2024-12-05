@@ -1,0 +1,22 @@
+.container{
+  display: grid;
+  grid-template-columns: 70% 28%;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 3px solid blue;
+}
+.container > div{
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.paragrafe{
+  border: 3px solid red;
+}
+.imagini{
+  border: 3px solid green;
+}
+.imagini img{
+  margin-left: 10px;
+  max-height: 190px;
+}
