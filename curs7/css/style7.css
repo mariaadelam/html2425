@@ -1,19 +1,40 @@
-#acasa{
-  background-color: red;
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 15px;
 }
-nav ul li{
-  display: inline-block;
-  padding: 20px 25px;
-  list-style: none;
-  background-color: rgb(95, 95, 238);
+nav {
+  background-color: #284554;
+  height: 36px;
 }
-nav ul li a{
-  font-size: 30px;
-  color: black;
+nav > ul {
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+  text-transform: uppercase;
+  /*text-transform: lowercase;*/
+  /*text-transform: capitalize;*/
+  display: inline;
+  float: left;
+  padding: 7px 5px 10px 5px;
+}
+nav > ul > li:hover {
+  background-color: #ff0a0a;
+}
+nav > ul > li.active {
+  background-color: #ff0a0a;
+}
+nav > ul > li.active > a {
+  color: #ffffff;
+}
+nav > ul > li > a {
+  color: #ffffff;
   text-decoration: none;
-  font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
+  list-style: none;
+  padding: 15px 20px;
+}
+nav > ul > li > a:hover {
+  color: #000000;
 }
 
 /* Submeniu */
@@ -42,4 +63,9 @@ ul.submeniu > li:hover{
 }
 nav > ul> li:hover > ul.submeniu > li{
   padding: 7px 5px 7px 5px;
+  text-decoration: none;
+}
+main{
+  /* z-index: 23423423423; */
+  position: relative;
 }

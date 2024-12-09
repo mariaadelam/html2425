@@ -1,22 +1,39 @@
-.container{
-  display: grid;
-  grid-template-columns: 70% 28%;
-  grid-gap: 10px;
-  padding: 10px;
-  border: 3px solid blue;
+#sectiune{
+  border: solid 5px rgba(0, 81, 173, 0.5);
 }
-.container > div{
-  text-align: left;
-  padding: 20px 0;
-  font-size: 30px;
+#stanga{
+  border: solid 5px #3dad00;
+  margin: 25px;
+  width: 64%;
+  float: left;
+
 }
-.paragrafe{
-  border: 3px solid red;
+.paragraf{
+  padding: 25px;
+  margin: 0;
 }
-.imagini{
-  border: 3px solid green;
+#dreapta{
+  border: solid 5px #ad0028;
+  width: 30%;
+  float: left;
+  margin: 25px 0;
+  text-align: center;
+
 }
-.imagini img{
-  margin-left: 10px;
-  max-height: 190px;
+figure{
+padding: 0;
+margin: 0px
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+.clearfix {
+display: inline-block;
 }
