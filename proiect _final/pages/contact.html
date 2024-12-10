@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/tabel.css" />
+  <link rel="stylesheet" href="../assets/css/form.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/images/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
@@ -40,50 +40,42 @@
   <!-- STOP HEADER-->
   <!-- START CONTACT-->
   <main>
-    <h1 class="titlu">Pagina Contact</h1>
-    <div id="contact-form">
-      <h2 class="titluform">Formular contact</h2>
-      <form action="" method="post">
-        <div>
-          <label for="">Orasul</label>
-          <select name="oras" id="">
+    <div class="container">
+      <form id="contact" action="" method="post">
+        <h3>Formular de Contact</h3>
+        <h4>Va rugam sa ne contactati pentru mai multe optiuni.</h4>
+        <fieldset>
+          <input placeholder="Nume si Prenume" type="text" name="fullname" tabindex="1" required autofocus>
+          <span></span>
+          <!-- autofocus - campul primeste autofocus atunci cand intri pe pagina -->
+          <!-- tabindex - determina ordinea de navigare cu tasta 'tab' -->
+        </fieldset>
+        <!-- <fieldset>
+          <select name="oras" tabindex="6" required>
+            <option value="" disabled selected>- selectează oras -</option>
             <option value="1">Bacau</option>
             <option value="2">Buzau</option>
             <option value="3">Dolj</option>
             <option value="4">Iasi</option>
-          </select>
-        </div>
-        <div>
-          <label for="">Cursuri</label>
-          <select name="cursuri[]" id="" multiple>
-            <!-- [] trimite datele -->
-            <!-- multiple - se pot selecta mai multe optiuni din lista, selectare multipla-->
-            <option value="css">CSS</option>
-            <option value="html">HTML</option>
-            <option value="js">JavaScript</option>
-            <option value="vue">VueJs</option>
-            <option value="node">NodeJs</option>
-          </select>
-        </div>
-        <div>
-          <label for="">Mesaj</label>
-          <textarea name="mesaj" id=""></textarea>
-        </div>
-        <div>
-          <fieldset>
-            <legend>Program cursuri</legend>
-            <input type="radio" name="program" id="" value="dimineata" />
-            <label for="">dimineata</label>
-            <input type="radio" name="program" id="" value="pranz" checked />
-            <!-- checked - este direct selectat -->
-            <label for="">pranz</label>
-            <input type="radio" name="program" id="" value="seara" disabled />
-            <label for="">seara</label>
-          </fieldset>
-        </div>
-        <div>
-          <button type="submit">Trimite datele</button>
-        </div>
+          </select> <span></span>
+        </fieldset> -->
+        <fieldset>
+          <input placeholder="Adresa de email" type="email"  name="email" tabindex="3" required><span></span> 
+        </fieldset>
+        <fieldset>
+          <input placeholder="Telefon (optional)" type="tel" name="phone" inputmode="numeric" pattern="\d+" title="Introduceti doar cifre"
+          tabindex="2" required><span></span> 
+        </fieldset>
+        <fieldset>
+          <input placeholder=" Web Site (optional)" type="url" name="site" tabindex="4" required><span></span> 
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Mesajul dumneavoastra ..." name="messege" tabindex="5" required></textarea><span></span> 
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" >Trimite datele</button>
+        </fieldset>
+        <p class="note"> Campurile marcate cu (*) sunt obligatorii!</p>
       </form>
     </div>
   </main>
